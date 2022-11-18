@@ -8,4 +8,4 @@ message("libtorchtext CMakeLists: ${TORCH_CXX_FLAGS}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_COMPILED_WITH_CXX_ABI}")
 
 add_subdirectory(../.. libtorchtext)
-add_subdirectory(tokenizer)
+# add_subdirectory(tokenizer)
