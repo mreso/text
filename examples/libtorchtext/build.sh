@@ -9,9 +9,10 @@ mkdir -p "${build_dir}"
 cd "${build_dir}"
 
 git submodule update
+
 cmake \
       \ # -DCMAKE_PREFIX_PATH="$(python -c 'import torch;print(torch.utils.cmake_prefix_path)')" \
-      -DTORCHSERVE_CPP_PATH="$(TORCHSERVE_CPP_PATH)" \
+      -DTORCHSERVE_CPP_PATH="$TORCHSERVE_CPP_PATH" \
       -DRE2_BUILD_TESTING:BOOL=OFF \
       -DBUILD_TESTING:BOOL=OFF \
       -DSPM_ENABLE_SHARED=OFF  \
